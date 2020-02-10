@@ -30,6 +30,7 @@ from reservations import views as reservation_views
 router = routers.DefaultRouter()
 router.register(r'users', users_and_groups_views.UserViewSet)
 router.register(r'groups', users_and_groups_views.GroupViewSet)
+router.register(r'profile', users_and_groups_views.ProfileViewSet)
 router.register(r'restaurants', restaurant_views.RestaurantViewSet)
 router.register(r'reservations', reservation_views.ReservationViewSet)
 
